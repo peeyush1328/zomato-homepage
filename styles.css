@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero--section{
+    background: url(/images/heroSectionBackground.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+    color: white;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    font-weight: 500;
+}
+.links{
+    text-decoration:none;
+    color: white;
+    font-weight: 300;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 65px;
+    height: 60px;
+    color: white;
+}
+.navbar--menu {
+    display: flex;
+    gap: 40px;
+}
+.bars{
+    display: none;
+    color: white;
+    text-decoration: none;
+}
+.user--icon {
+    color: red;
+    border-radius: 100%;
+    border: solid 1px white;
+    height: 30px;
+    width: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero--section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: calc(60vh - 60px);
+}
+.hero--section-container-img{
+    width: 280px;
+}
+.hero--section-container-heading{
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+.hero--section-input-container{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    width: 50%;
+    gap: 10px;
+    
+}
+.input-container-location, .input-container-search{
+    outline: none;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.input-container-location{
+    width: 30%;
+    border-right: 2px solid rgb(215, 214, 214);
+}
+.input-container-search{
+    width: 70%;
+}
+@media only screen and (max-width: 950px) {
+    .navbar--menu .links{
+        display: none;
+    }
+    .navbar--menu{
+        padding-right: 10px;
+    }
+    .navbar{
+        padding: 16px;
+    }
+    .hero--section{
+        min-height: 40vh;
+    }
+    .user--icon{
+        display:flex;
+    }
+    .bars{
+        display: flex;
+    }
+    .link{
+        display: none;
+    }
+    .hero--section-container{
+        height: calc(40vh - 60px);
+    }
+    .hero--section-input-container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero--section-container-img{
+        width: 180px;
+    }
+    .input-container-location, .input-container-search{
+        padding: 15px;
+        border-radius: 10px;
+        width: 90%;
+    }  
+    .input-container-location{
+        border-right: none;
+    } 
+}
