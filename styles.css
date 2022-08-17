@@ -9,7 +9,7 @@
     background: url(images/heroSectionBackground.png);
     background-position: center;
     background-size: cover;
-    min-height: 60vh;
+    min-height: 460px;
     color: white;
 }
 
@@ -65,7 +65,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    height: calc(60vh - 60px);
+    height: calc(460px - 60px);
 }
 
 .hero--section-container-img {
@@ -574,7 +574,7 @@
     }
 
     .hero--section-container {
-        height: calc(40vh - 60px);
+        height: calc(400px - 60px);
     }
 
     .hero--section-input-container {
